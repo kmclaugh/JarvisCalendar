@@ -6,28 +6,52 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		0A9B91C816B0D189008E9823 /* Jarvis_iCal_Parser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Jarvis_iCal_Parser.py; sourceTree = "<group>"; };
+		0AAD2F1D16B196DA0069254F /* Calendar_Consolidator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Calendar_Consolidator.py; sourceTree = "<group>"; };
+		0AAD2F1F16B1D5E50069254F /* Jarvis_Calendar_Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Jarvis_Calendar_Notes.rtf; sourceTree = "<group>"; };
+		0AAD2F2816B1DD600069254F /* Download_Calendars.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Download_Calendars.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		0A9B91BB16B0D166008E9823 = {
 			isa = PBXGroup;
 			children = (
+				0AAD2F2816B1DD600069254F /* Download_Calendars.py */,
+				0A9B91C816B0D189008E9823 /* Jarvis_iCal_Parser.py */,
+				0AAD2F1D16B196DA0069254F /* Calendar_Consolidator.py */,
+				0AAD2F1F16B1D5E50069254F /* Jarvis_Calendar_Notes.rtf */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		0A9B91C216B0D166008E9823 /* JarvisCalendar */ = {
+		0A9B91CC16B0D8B6008E9823 /* JarvisCalendar-py2.7 */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 0A9B91C516B0D166008E9823 /* Build configuration list for PBXLegacyTarget "JarvisCalendar" */;
+			buildConfigurationList = 0A9B91CD16B0D8B6008E9823 /* Build configuration list for PBXLegacyTarget "JarvisCalendar-py2.7" */;
+			buildPhases = (
+			);
+			buildToolPath = /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7;
+			dependencies = (
+			);
+			name = "JarvisCalendar-py2.7";
+			passBuildSettingsInEnvironment = 1;
+			productName = "JarvisCalendar-py2.7";
+		};
+		0AAD2F2316B1DD000069254F /* python3.2 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 0AAD2F2416B1DD000069254F /* Build configuration list for PBXLegacyTarget "python3.2" */;
 			buildPhases = (
 			);
 			buildToolPath = /Library/Frameworks/Python.framework/Versions/3.2/bin/python3.2;
 			dependencies = (
 			);
-			name = JarvisCalendar;
+			name = python3.2;
 			passBuildSettingsInEnvironment = 1;
-			productName = JarvisCalendar;
+			productName = python3.2;
 		};
 /* End PBXLegacyTarget section */
 
@@ -49,7 +73,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A9B91C216B0D166008E9823 /* JarvisCalendar */,
+				0A9B91CC16B0D8B6008E9823 /* JarvisCalendar-py2.7 */,
+				0AAD2F2316B1DD000069254F /* python3.2 */,
 			);
 		};
 /* End PBXProject section */
@@ -106,7 +131,7 @@
 			};
 			name = Release;
 		};
-		0A9B91C616B0D166008E9823 /* Debug */ = {
+		0A9B91CE16B0D8B6008E9823 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUGGING_SYMBOLS = YES;
@@ -118,7 +143,28 @@
 			};
 			name = Debug;
 		};
-		0A9B91C716B0D166008E9823 /* Release */ = {
+		0A9B91CF16B0D8B6008E9823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0AAD2F2516B1DD000069254F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AAD2F2616B1DD000069254F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_CFLAGS = "";
@@ -139,11 +185,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A9B91C516B0D166008E9823 /* Build configuration list for PBXLegacyTarget "JarvisCalendar" */ = {
+		0A9B91CD16B0D8B6008E9823 /* Build configuration list for PBXLegacyTarget "JarvisCalendar-py2.7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A9B91C616B0D166008E9823 /* Debug */,
-				0A9B91C716B0D166008E9823 /* Release */,
+				0A9B91CE16B0D8B6008E9823 /* Debug */,
+				0A9B91CF16B0D8B6008E9823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAD2F2416B1DD000069254F /* Build configuration list for PBXLegacyTarget "python3.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAD2F2516B1DD000069254F /* Debug */,
+				0AAD2F2616B1DD000069254F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
